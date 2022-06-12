@@ -29,3 +29,5 @@ while row <=d:
         k+=1
     print()
     row+=1
+
+
