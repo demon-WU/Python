@@ -63,8 +63,6 @@ G=[1,2,3,4,5,6]
 H=['a','b','c']
 J=zip(G,H)
 print(list(J))
-
-
 def __new__(*args, **kwargs):  # real signature unknown
     """ Create and return a new object.  See help(type) for accurate signature. """
     pass
