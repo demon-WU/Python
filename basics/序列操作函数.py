@@ -1,5 +1,5 @@
-list=[1,2,3,4,5]
-print(all(list))
+# list=[1,2,3,4,5]
+# print(all(list))
 list1=[0,1,2,3,4,5]
 # 0返回false
 print(all(list1))
@@ -54,4 +54,31 @@ def reverse(self, *args, **kwargs): # real signature unknown
         pass
 # 列表的降序方法
 
-range()
+# for i in range(0,5,2):
+#     print(i)
+# 取数函数，多用于for循环
+
+
+G=[1,2,3,4,5,6]
+H=['a','b','c']
+J=zip(G,H)
+print(list(J))
+
+
+def __new__(*args, **kwargs):  # real signature unknown
+    """ Create and return a new object.  See help(type) for accurate signature. """
+    pass
+
+# 根据索引组合成一个元组，按照最少的那个序列进行压缩
+# [(1, 'a'), (2, 'b'), (3, 'c')]
+
+
+A={'name':'姓名','age':19,'city':'茂名'}
+for key,item in enumerate(A):
+    print(key,item)
+    # 0 name
+    # 1 age
+    # 2 city
+    def __init__(self, iterable, start=0): # known special case of enumerate.__init__
+        """ Initialize self.  See help(type(self)) for accurate signature. """
+        pass
