@@ -1,0 +1,9 @@
+'''
+打开文件
+'''
+#w---打开文件，当文件不存在时创建,存在时覆盖
+FileObj=open('test.txt','w')
+#写文件
+FileObj.write('在苍茫的大海上'*3)
+#关闭文件
+FileObj.close()
