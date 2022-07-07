@@ -36,9 +36,9 @@ import shutil
 # for i in a:
 #     print(i)
 #     pass
-with os.scandir('d:/') as ss:
-    for i in ss:
-        print(i)
-        pass
-    pass
+# with os.scandir('d:/') as ss:
+#     for i in ss:
+#         print(i)
+#         pass
+#     pass
 
