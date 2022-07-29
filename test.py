@@ -1,27 +1,15 @@
-# import time
-# import selenium
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# driver=webdriver.Chrome()
-# driver.get('https://www.baidu.com/')
-# a=driver.find_element(By.ID,'kw')
-# a.send_keys('寄你太美')
-# time.sleep(2)
-# b=driver.find_element(By.ID,'form')
-# b.click()
-# b=driver.find_element(By.ID,'su')
-# b.click()
-
-class Wash():
-    def funcation(self):
-        print('可以洗衣机')
-        #获取实例属性
-        print("宽度为{},高度为{}".format(self.width,self.height))
-        pass
-    pass
-haier=Wash()
-# 实例属性
-haier.height=500
-haier.width=800
-
-haier.funcation()
+# 导入socket模块
+import socket
+# socket.AF_INET 为IPV4 ，socket.SOCK_STREAM 为TCP协议
+socket_TCP = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+# 连接服务器端
+socket_TCP.connect(('192.168.43.20',9090))
+# 发送信息
+send_data = input('输入你要传达的文字:')
+send_data1 = send_data.encode('UTF-8')
+socket_TCP.send(send_data1)
+# 接收信息
+# recv_data = socket_TCP.recv()
+# recv_data1 = recv_data.decode('UTF-8')
+# 关闭连接
+socket_TCP.close()
