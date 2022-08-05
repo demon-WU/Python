@@ -24,6 +24,8 @@ if __name__ == '__main__':
     # 设置连接IP地址及端口号
     # 第一个参数表示IP地址，一般不用指定，表示本机的任何一个IP即可
     # 第二个参数表述端口号
+    # 端口号复用
+    server_socket.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,True)
     server_socket.bind(('',9090))
     # 设置监听
     # 128表示最大等待建立连接的个数
